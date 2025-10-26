@@ -1,0 +1,184 @@
+* {
+    font-family: jost;
+    margin: 0;
+}
+
+.form {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 50px;
+    gap: 20px;
+
+
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    padding-top: 150px;
+    padding-bottom: 186px;
+
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(10px);
+    background-repeat: no-repeat;
+}
+
+.close {
+
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: larger;
+    border: none;
+    /* z-index: 2; */
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(211, 211, 211);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+div h1 {
+    margin: 20px;
+}
+
+.inputs {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+label {
+    font-size: small;
+}
+
+.btn {
+
+    padding: 5px 85px;
+    color: white;
+    background-color: black;
+}
+
+.login-container {
+    display: flex;
+    width: 650px;
+    background-color: white;
+    border-radius: 0 50px 0 50px;
+
+}
+
+.Signup-container {
+    display: none;
+    width: 650px;
+    background-color: white;
+
+    border-radius: 0 50px 0 50px;
+
+
+
+}
+
+.image-section {
+    width: 300px;
+    background: url(images/login-page.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 50px 0 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section .image-text {
+
+    max-width: 250px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+
+.image-section .signup {
+    padding: 5px 20px;
+    color: white;
+    border: 1px solid white;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: transform(0.3s ease-in);
+}
+
+.image-section .signup:hover {
+
+    color: white;
+    border: none;
+    background-color: black;
+   
+}
+
+input {
+    height: 20px;
+    width: 200px;
+    border: 1px solid rgb(178, 171, 171);
+}
+
+
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 450px;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.facebook {
+    display: flex;
+    width: 100px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #3B5998;
+    color: white;
+}
+
+.twitter {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #1DA1F2;
+    color: white;
+}
