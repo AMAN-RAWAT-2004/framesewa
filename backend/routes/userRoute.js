@@ -1,0 +1,6 @@
+const express = require('express')
+const Router = express.Router()
+const authcontroler=require('./../Authorization & Authentication/authControler')
+const userControler = require('../controlers/userControler')
+// Router.post('/signup',authcontroler.signup )
+Router.route('/').get(userControler.getAllUsers)
